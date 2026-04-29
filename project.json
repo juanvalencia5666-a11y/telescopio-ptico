@@ -1,0 +1,24 @@
+{
+  "overview": "Página interactiva inmersiva sobre el telescopio óptico en español. Incluye un modelo 3D realista del telescopio que gira al ser golpeado por estrellas fugaces, fondo espacial con nebulosas y agujeros negros brillantes, descripciones interactivas de las partes del telescopio, y narración de voz que lee toda la historia y el contenido.",
+  "features": [
+    "Modelo 3D realista del telescopio óptico con física de rotación",
+    "Estrellas fugaces y normales que colisionan con el telescopio para hacerlo girar",
+    "Descripciones emergentes de las partes del telescopio al hacer hover",
+    "Fondo espacial con nebulosas animadas y agujeros negros con efecto de brillo",
+    "Narración de voz en español (Web Speech API) que lee todo el contenido",
+    "Secciones: Historia, Cómo funciona, Usos, Datos curiosos",
+    "Diseño profesional con estética cósmica profunda"
+  ],
+  "category": "showcase",
+  "tags": [
+    "telescope",
+    "space",
+    "3d",
+    "interactive",
+    "spanish",
+    "science",
+    "astronomy",
+    "education"
+  ],
+  "last_updated": "2026-04-29T02:26:09.052Z"
+}
