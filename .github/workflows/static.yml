@@ -36,12 +36,12 @@ jobs:
           npm run build
 
       - name: Setup Pages
-        uses: configure-pages@v4
+        uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'dist' # Si tu compilación genera la carpeta en otro lugar, cámbialo aquí
+          path: 'dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
