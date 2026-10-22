@@ -2,7 +2,7 @@ name: Deploy static content to Pages
 
 on:
   push:
-    branches: ["main"] # O "master" según cómo se llame tu rama
+    branches: ["main"]
 
   workflow_dispatch:
 
@@ -30,19 +30,18 @@ jobs:
         with:
           node-version: 20
 
-     - name: Install dependencies and build
+      - name: Install dependencies and build
         run: |
-          cd src/frontend
           npm install --legacy-peer-deps
-          npx vite build
+          npm run build
 
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'src/frontend/dist'
+          path: 'dist' # Si tu compilación genera la carpeta en otro lugar, cámbialo aquí
 
       - name: Deploy to GitHub Pages
         id: deployment
