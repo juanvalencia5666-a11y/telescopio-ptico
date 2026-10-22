@@ -2,7 +2,7 @@ name: Deploy static content to Pages
 
 on:
   push:
-    branches: ["main"] # O "master"
+    branches: ["main"] # O "master" si tu rama principal se llama así
 
   workflow_dispatch:
 
@@ -30,10 +30,7 @@ jobs:
         with:
           node-version: 20
 
-      - name: List files to check path
-        run: ls -la src/frontend
-
-      - name: Install and Build
+      - name: Install dependencies and build
         run: |
           cd src/frontend
           npm install
@@ -45,7 +42,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'src/frontend/dist' # Si tu carpeta de compilación se llama distinto (como 'build'), cámbiala aquí
+          path: 'src/frontend/dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
