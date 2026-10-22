@@ -33,7 +33,7 @@ jobs:
       - name: Install dependencies and build
         run: |
           cd src/frontend
-          npm install
+          npm install --legacy-peer-deps
           npm run build
 
       - name: Setup Pages
