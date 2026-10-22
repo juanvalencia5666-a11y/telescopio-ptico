@@ -2,7 +2,7 @@ name: Deploy static content to Pages
 
 on:
   push:
-    branches: ["main"] # O "master" si tu rama principal se llama así
+    branches: ["main"] # O "master" según cómo se llame tu rama
 
   workflow_dispatch:
 
